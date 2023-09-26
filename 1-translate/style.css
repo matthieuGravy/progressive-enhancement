@@ -21,6 +21,9 @@ body {
   background-repeat: no-repeat;
   background-position: bottom right;
 }
+header h1:nth-child(1) {
+  background-color: yellow;
+}
 
 q {
   max-width: calc(100% / 2);
@@ -35,8 +38,13 @@ q {
 .bad {
   font-weight: 400;
 }
-
- {
+.bad {
+  color: red;
+}
+.good {
+  color: green;
+}
+strong {
   font-style: normal;
 }
 p {
@@ -64,4 +72,38 @@ a:visited {
 }
 .farmer {
   border-color: pink;
+}
+blockquote {
+  font-style: italic;
+}
+
+tr:nth-child(odd) {
+  background-color: white;
+}
+tr:nth-child(even) {
+  background-color: rgb(126, 221, 126);
+}
+tr:nth-child(2) td:nth-child(2) {
+  background-image: url("./bien.png");
+  background-repeat: no-repeat;
+  margin: auto;
+  background-position: center center;
+  padding: 10%;
+}
+tr:nth-child(3) td:nth-child(2) {
+  background-image: url("./mal.png");
+  background-repeat: no-repeat;
+  margin: auto;
+  background-position: center center;
+  padding: 10%;
+}
+tr:nth-child(4) td:nth-child(2) {
+  background-image: url("./chat.png");
+  background-repeat: no-repeat;
+  margin: auto;
+  background-position: center center;
+  padding: 10%;
+}
+.bold {
+  font-weight: 700;
 }
