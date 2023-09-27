@@ -15,8 +15,9 @@ html {
 body {
   max-width: 90%;
   margin: auto;
-  background-image: linear-gradient(#1687ed, #14375a);
+  background: linear-gradient(#1687ed, #14375a);
   background-image: url("./pexels-alex-qian-2304791.jpg");
+  opacity: 0.9;
   background-position: cover;
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -26,7 +27,8 @@ header h1:nth-child(1) {
   font-size: 5vh;
 }
 
-q {
+q,
+blockquote {
   max-width: calc(100% / 2);
   margin: 80px auto;
   display: block;
@@ -103,4 +105,12 @@ ul li {
 }
 .bold {
   font-weight: 700;
+}
+.gallery {
+  display: flex;
+  flex-direction: row;
+  gap: 10vw;
+}
+.gallery img {
+  max-width: 30%;
 }
