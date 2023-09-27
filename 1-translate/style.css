@@ -15,15 +15,15 @@ html {
 body {
   max-width: 90%;
   margin: auto;
-  background-image: linear-gradient(#1687ed, #14375a),
-    url("./pexels-alex-qian-2304791.jpg");
-  /*background-image: url("./pexels-alex-qian-2304791.jpg");*/
+  background-image: linear-gradient(#1687ed, #14375a);
+  background-image: url("./pexels-alex-qian-2304791.jpg");
   background-position: cover;
   background-repeat: no-repeat;
   background-position: bottom right;
 }
 header h1:nth-child(1) {
   background-color: yellow;
+  font-size: 5vh;
 }
 
 q {
@@ -84,40 +84,23 @@ tr:nth-child(odd) {
 tr:nth-child(even) {
   background-color: rgb(126, 221, 126);
 }
-tr:nth-child(2) td:nth-child(2) {
+
+ul li:nth-child(1) {
   background-image: url("./bien.png");
-  background-repeat: no-repeat;
-  margin: auto;
-  background-position: center center;
-  padding: 10%;
 }
-tr:nth-child(3) td:nth-child(2) {
+ul li:nth-child(2) {
   background-image: url("./mal.png");
-  background-repeat: no-repeat;
-  margin: auto;
-  background-position: center center;
-  padding: 10%;
 }
-tr:nth-child(4) td:nth-child(2) {
+ul li:nth-child(3) {
   background-image: url("./chat.png");
+}
+ul li {
+  padding: 3%;
+  background-size: 2rem;
   background-repeat: no-repeat;
-  margin: auto;
+
   background-position: center center;
-  padding: 10%;
 }
 .bold {
   font-weight: 700;
-}
-.gallery {
-  display: flex;
-  flex-direction: row;
-  gap: 10vw;
-}
-.gallery img {
-  max-width: 30vw;
-  flex: 1;
-}
-.gallery figcaption {
-  flex: 3;
-  text-align: left;
 }
